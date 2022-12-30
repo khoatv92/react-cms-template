@@ -3,16 +3,18 @@ import { Card, Avatar, Tabs, Row, Col } from 'antd';
 import { ProDescriptions } from '@ant-design/pro-components';
 import Settings from 'components/UserInfo/Settings';
 import Activity from 'components/UserInfo/Activity';
+import Sessions from 'components/UserInfo/Sessions';
 
 const Profile: React.FC = () => {
   const [loading, setLoading] = useState(true);
 
   const itemsTab = [
+    { label: 'Sessions', key: 'item-3', children: <Sessions /> },
     {
       label: 'Activity',
       key: 'item-1',
       children: <Activity loading={loading} />
-    }, // remember to pass the key prop
+    },
     { label: 'Settings', key: 'item-2', children: <Settings /> }
   ];
 

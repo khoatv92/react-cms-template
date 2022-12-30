@@ -7,11 +7,21 @@ interface Props {
 
 const Activity: React.FC<Props> = ({ loading }) => {
   const data = [
-    'Racing car sprays burning fuel into crowd.',
-    'Japanese princess to wed commoner.',
-    'Australian walks 100km after outback crash.',
-    'Man charged over missing wedding girl.',
-    'Los Angeles battles huge wildfires.'
+    '💫 Racing car sprays burning fuel into crowd.',
+    '🪴 Japanese princess to wed commoner.',
+    '⛹️‍♀️ Australian walks 100km after outback crash.',
+    '🏄‍♀️ Man charged over missing wedding girl.',
+    '🎮 Los Angeles battles huge wildfires.',
+    '💫 Racing car sprays burning fuel into crowd.',
+    '🪴 Japanese princess to wed commoner.',
+    '⛹️‍♀️ Australian walks 100km after outback crash.',
+    '🏄‍♀️ Man charged over missing wedding girl.',
+    '🎮 Los Angeles battles huge wildfires.',
+    '💫 Racing car sprays burning fuel into crowd.',
+    '🪴 Japanese princess to wed commoner.',
+    '⛹️‍♀️ Australian walks 100km after outback crash.',
+    '🏄‍♀️ Man charged over missing wedding girl.',
+    '🎮 Los Angeles battles huge wildfires.'
   ];
 
   return (
@@ -19,6 +29,9 @@ const Activity: React.FC<Props> = ({ loading }) => {
       loading={loading}
       bordered
       dataSource={data}
+      pagination={{
+        pageSize: 10
+      }}
       renderItem={(item) => (
         <List.Item>
           <Typography.Text mark>[01/12/2022 15:00]</Typography.Text> {item}
