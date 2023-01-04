@@ -19,3 +19,8 @@
 [class^="ant-statistic"], [class*=" ant-statistic"] {
   font-size: inherit;
 }
+
+.ant-pro-page-container-children-content, .ant-pro-page-container .ant-pro-page-container-warp-page-header {
+  padding-inline: 24px !important;
+}
+
